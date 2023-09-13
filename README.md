@@ -5,7 +5,7 @@ Site de portefólio pessoal. Projeto da disciplina de PW do centro universitári
 
 - [x] Header
 - [x] Apresentação
-- [ ] Projetos
+- [x] Projetos
 - [ ] Orçamento
 - [ ] Menu
 - [ ] Responsividade 
