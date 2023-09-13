@@ -162,3 +162,27 @@
  .card p {
      color: #FFF;
  }
+
+ #secao-orcamento{
+    height: 100vh;
+    padding: 3rem;
+ }
+
+ form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color:#9896a5;
+    max-width: 500px;
+    border-radius: 5rem;
+    padding: 2rem;
+    margin: 2rem auto;
+ }
+
+ .Campo {
+    display: flex;
+    flex-direction:column;
+ }
+
+ .linha {
+    grid-column: 1 / 3;
+ }
