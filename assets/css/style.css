@@ -36,7 +36,7 @@
  /* pseudo-elemento */
  header::before {
      content: '';
-     background-image: url('./image/chuteira.avif');
+     background-image: url('./images/esporte.png');
      background-size: cover;
      height: 100%;
      width: 100%;
@@ -171,7 +171,8 @@
  form{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1rem;
+    gap: 1rem
+;
     background-color:#9896a5;
     max-width: 500px;
     border-radius: 5rem;
