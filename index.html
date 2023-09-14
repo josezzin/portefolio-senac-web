@@ -87,28 +87,39 @@
             <label for="Nome">Nome</label>
             <input type="text" id="Nome">
             </div>
-            
 
-            <label for="Qtde">Qtde de páginas</label>
-            <input type="number" min="1" id="Qtde">
-            
-            <label for="Tipo">Tipo</label>
-            <select name="Tipo" id="Tipo">
-                <option value="">Estático</option>
-                <option value="">Dinâmico</option>
-            </select>
+            <div class="Campo">
+                <label for="qtde">Qtde de páginas</label>
+                <input type="number" min="1" id="qtde">
+            </div>
 
-            <label for="Layout">Precisa de layout?</label>
-            <input Nome="Layout" type="Radio" id="Layout_sim">
-            <label for="Layout_sim">sim, preciso</label>
-            <input Nome="Layout" type="Radio" id="Layout_não">
-            <label for="Layout_não">não, já tenho</label>
+            <div class="Campo">
+                <label for="Tipo">Tipo</label>
+                <select name="Tipo" id="Tipo">
+                    <option value="">Estático</option>
+                    <option value="">Dinâmico</option>
+                </select>
+            </div>
 
-            <input type="Checkbox" id="Js">
-            <label for="Js">Meu site precisa de javascript</label>
+            <div class="Campo linha">
+                <label for="layout">Precisa de layout?</label>
+                <div>
+                    <input name="Layout" type="Radio" id="Layout_sim">
+                    <label for="Layout_sim">Sim, preciso</label>
+                    <input name="Layout" type="Radio" id="Layout_nao">
+                    <label for="Layout_nao">Não, já tenho</label>
+                </div>
+            </div>
 
-            <label for="Prazo">Prazo</label>
-            <input type="Range" id="Prazo">
+            <div class="Linha">
+                <input type="Checkbox" id="js">
+                <label for="Js">Meu site precisa de javascript</label>
+            </div>
+
+            <div class="Campo linha">
+                <label for="Prazo">Prazo</label>
+                <input type="Range" id="Prazo">
+            </div>
 
         </form>
     </section>
@@ -116,3 +127,7 @@
 </body>
 
 </html>
+
+        
+
+           

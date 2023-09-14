@@ -171,6 +171,7 @@
  form{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 1rem;
     background-color:#9896a5;
     max-width: 500px;
     border-radius: 5rem;
