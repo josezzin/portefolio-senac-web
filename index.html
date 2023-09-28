@@ -7,10 +7,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifolio</title>
     <link rel="stylesheet" href="./assets/css/style.css">
-
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <script src="./assets/js/script.js" defer></script>
+    <script src="./assets/js/menu.js" defer></script>
 </head>
 
 <body>
+
+    <div id="menu-icon">
+        <span class="material-symbols-outlined">
+            menu
+        </span>
+    </div>
+
+    <aside id="menu">
+        <nav>
+            <ul>
+                <li>
+                    <a href="#home">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="icon">
+                            <path d="M11.47 3.84a.75.75 0 011.06 0l8.69 8.69a.75.75 0 101.06-1.06l-8.689-8.69a2.25 2.25 0 00-3.182 0l-8.69 8.69a.75.75 0 001.061 1.06l8.69-8.69z" />
+                            <path d="M12 5.432l8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 01-.75-.75v-4.5a.75.75 0 00-.75-.75h-3a.75.75 0 00-.75.75V21a.75.75 0 01-.75.75H5.625a1.875 1.875 0 01-1.875-1.875v-6.198a2.29 2.29 0 00.091-.086L12 5.43z" />
+                        </svg>
+                          
+                       <span>home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#secao-apresentacao">apresentação</a>
+                </li>
+                <li>
+                    <a href="#secao-projetos">projetos</a>
+                </li>
+                <li>
+                    <a href="#secao-orcamento">orçamento</a>
+                </li>
+            </ul>
+
+        </nav>
+    </aside>
 
     <header>
         <h1>SPORT NEWS SHOES</h1>
@@ -21,11 +56,9 @@
     <section id="secao-apresentacao">
         <img src="https://github.com/josezzin.png" alt="Foto do programador José Henrique">
         <div>
-            <h2>Programando desde 2023</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam illo molestias, quia aspernatur harum
-                labore asperiores vel temporibus voluptates assumenda laborum ullam eos quas quod ab veniam alias qui
-                tenetur?</p>
-            <a href="#" class="botao">Ver projetos</a>
+            <h2>Um pouco sobre nossa empresa!</h2>
+            <p>Uma empresa destinada a vendas de calcados esportivos!</p>
+            <a href="#secao-projetos" class="botao">Ver projetos</a>
         </div>
     </section>
 
@@ -49,8 +82,7 @@
             <li>
                 <div class="card">
                     <div class="card-image-wrapper">
-                        <img src="https://images.unsplash.com/photo-1599837565318-67429bde7162?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZGV2fGVufDB8MXwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
-                            alt="">
+                        <img src="https://images.unsplash.com/photo-1599837565318-67429bde7162?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZGV2fGVufDB8MXwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
                     </div>
                     <div class="card-content">
                         <h2>Titulo do Projeto</h2>
@@ -64,8 +96,7 @@
             <li>
                 <div class="card">
                     <div class="card-image-wrapper">
-                        <img src="https://images.unsplash.com/photo-1599837565318-67429bde7162?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZGV2fGVufDB8MXwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
-                            alt="">
+                        <img src="https://images.unsplash.com/photo-1599837565318-67429bde7162?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZGV2fGVufDB8MXwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
                     </div>
                     <div class="card-content">
                         <h2>Titulo do Projeto</h2>
@@ -80,51 +111,52 @@
     </section>
 
     <section id="secao-orcamento">
-        <h2>Simule um orçarmento para seu site</h2>
+        <h2>Simule um orçamento para o seu site</h2>
 
-        <form action="">
-            <div class="Campo linha">
-            <label for="Qual calçado procura ?">Qual calçado procura?</label>
-            <input type="text" id="Qual calçado procura?">
+        <form action="" id="form-orcamento">
+            <div class="campo linha">
+                <label for="Nome">Marca</label>
+                <input type="text" id="Nome">
             </div>
 
-            <div class="Campo">
-                <label for="Numeração">Numeração do calçado </label>
-                <input type="number" min="1" id="Numeração">
+            <div class="campo">
+                <label for="qtde">Numero de pares ?</label>
+                <input type="number" min="1" id="qtde">
             </div>
-
-            <div class="Campo">
-                <label for="Tipo">Tipo</label>
-                <select nome="Tipo" id="Tipo">
-                    <option value="">Tênis</option>
-                    <option value="">Chuteira de society</option>
-                    <option value="">Chuteira de campo </option>
+            
+            <div class="campo">
+                <label for="tipo">Tipo de calçado ?</label>
+                <select name="tipo" id="tipo">
+                    <option value="1">Chuteira de campo</option>
+                    <option value="2">Chuteira de salão</option>
                 </select>
             </div>
 
-            <div class="Campo linha">
-                <label for="acessório">Precisa de um acessório a mais?</label>
+            <div class="campo linha">
+                <label for="layout">Precisa de acessório ?</label>
                 <div>
-                    <input nome="Layout" type="Radio" id="Layout_sim">
-                    <label for="Layout_sim">Sim, preciso</label>
-                    <input nome="Layout" type="Radio" id="Layout_nao">
-                    <label for="Layout_nao">Não, já tenho</label>
+                    <input name="layout" type="radio" id="layout_sim">
+                    <label for="layout_sim">sim, preciso</label>
+                    <input name="layout" type="radio" id="layout_nao">
+                    <label for="layout_nao">não, já tenho</label>
                 </div>
             </div>
 
-            <div class="Linha">
-                <input type="Checkbox" id="js">
-                <label for="Js">Aceito os termos de compra!</label>
+            <div class=" linha">
+                <input type="checkbox" id="js">
+                <label for="js">Aceito os termos de compra!</label>
             </div>
 
-            <div class="Campo linha">
-                <label for="Avalie o atedimento!">Avalie o atedimento!</label>
-                <input type="Range" id="Avalie o atedimento!">
+            <div class="campo linha">
+                <label for="prazo">Prazo da entrega !</label>
+                <input type="range" id="prazo" min="2" max="10">
             </div>
+            
+            <output>R$ 100,00</output>
 
         </form>
     </section>
-
+    
 </body>
 
 </html>
